@@ -42,8 +42,10 @@ export const Default = {
      // Simulates pinning the first task
      await fireEvent.click(canvas.getByLabelText('pinTask-1'));
      // Simulates pinning the third task
-     await fireEvent.click(canvas.getByLabelText('pinTask-2'));
+     await fireEvent.click(canvas.getByLabelText('NOT A TASK'));
    });
+
+   // expect(canvas).not.toBeDefined();
  },
 };
 export const Error = {
